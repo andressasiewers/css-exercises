@@ -9,13 +9,16 @@ body {
 
 img {
   width: 600px;
+  display: flex;
 }
 
 button {
   font-family: Roboto, sans-serif;
   border: none;
   border-radius: 8px;
+  box-shadow: 1px 1px 2px rgba(0,0,0,.075);
   background: #eee;
+  padding: 10px;
 }
 
 input {
@@ -24,4 +27,59 @@ input {
   padding: 8px 24px;
   width: 400px;
   margin-bottom: 16px;
+  box-shadow: 1px 1px 2px rgba(0,0,0,.075);
+  gap: 4px;
 }
+
+a {
+  text-decoration: none;
+  color: gray;
+}
+
+ul {
+  list-style-type: none;
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  padding: 4px;
+}
+
+.left-links {
+  display: flex;
+  gap: 16px;
+  padding-left: 16px;
+}
+
+.right-links {
+  display: flex;
+  gap: 16px;
+  padding-right: 16px;
+}
+
+.content  {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-top: 60px;
+}
+
+.footer {
+  background-color: #eeeeee;
+  padding: 4px;
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.footer.right-links {
+  display: flex;
+}
+
+
